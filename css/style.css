@@ -1,0 +1,282 @@
+/* 
+    selector{
+        property: value
+    }
+
+    for tags use name
+
+    for class use a dot(.) and the name
+
+    for id use a hashtag(#) and the name
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 90px;
+    padding-right: 90px; */
+
+    /* padding: 15px 90px 15px 90px; */
+
+    padding: 15px 90px;
+    background-color: #e0e0e0;
+}
+.navlinks{
+    display: flex;
+    gap:30px ;
+}
+.navlinks a{
+    color: grey;
+}
+.requestbutton{
+    color: white;
+    background-color: rgb(0, 185, 124);
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.requestbuttonNav{
+    color: white;
+    background-color: rgb(0, 185, 124);
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+#bgSection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-left: 40px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+#bgSection img{
+    width: 70%;
+}
+
+.bgleft{
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.bgleft h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#bgSection p{
+    margin: 12px 0 22px;
+}
+
+#whyeasybank{
+    padding: 100px 50px;
+    background-color: #e0e0e0;
+}
+
+.whyeasybanktop{
+    width: 63%;
+    margin-bottom: 70px;
+}
+
+.whyeasybanktop h1{
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 14px;
+}
+
+.whyeasybankbottom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.whyeasybankbottom h3{
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+#latestarticle{
+    padding: 100px 60px;
+}
+
+.latestarticlebotom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    place-items: center;
+    gap: 30px;
+}
+
+.aeroplane img, .blue img, .restaurant img, .currency img{
+    width: 100%;
+}
+
+.currency img{
+    height: 0% !important;
+    width: 100%;
+}
+
+.aeroplane, .blue, .restaurant, .currency {
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+.aeroplane div, .blue div, .restaurant div, .currency div {
+    padding: 20px;
+}
+#latestarticle h6{
+    padding-bottom: 15px;
+    font-weight: 300;
+}
+.article{
+    padding-bottom: 40px;
+}
+.article h2{
+    font-weight: 400;
+    font-size: 25px;
+}
+#latestarticle p{
+    padding-top: 20px;
+}
+a{
+    color: #beaeae;
+}
+
+.lastbotom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    place-items: center;
+    gap: 5px;
+    text-align: center;
+}
+#easybankbotom{
+    background-color: rgb(12, 21, 61);
+
+}
+.EBL{
+    padding: 40px 0px;
+    color: aliceblue;
+    margin-left: 0px;
+   
+}
+
+.logo p img{
+    padding-bottom: 40px;
+}
+a:hover{
+    color: rgb(42, 121, 42);
+}
+.botomlinks{
+  margin-left: 20px;
+  color: #e0e0e0;
+
+}
+.botomlinks2{
+    margin-left: 50px;
+
+}
+.botomlinks p{
+padding: 5px 0px;
+}
+.botomlinks2 p{
+    padding: 5px 0px;
+}
+
+
+.lastbutton{
+    padding-top: 10px;
+    display: contents;
+}
+.logo a{
+    padding: 0px 5px;
+}     
+.lastbutton h5{
+    font-weight: 400;
+    font-size: 70%;
+    color: #a79d9d;
+}
+.logo p{
+    
+}
+.whyeasybankbottom h3{
+font-weight: bold;
+}
+.whyeasybankbottom p{
+    font-size: 14px;
+}
+.latestarticlebotom p{
+    font-size: 14px;
+}
+.latestarticlebotom a{
+    font-size: 14px;
+}
+
+@media screen and (max-width:992px) {
+
+    #navsection{
+        padding: 15px 40px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .requestbuttonNav{
+        display: none;
+    }
+
+    #bgSection{
+        margin-left: 10px;
+    }
+
+    .bgleft h1{
+        font-size: 30px;
+    }
+    .bgleft{
+        width: 70%;
+    }
+    .bgleft img{
+        width: 50%;
+    }
+
+    .whyeasybankbottom, .latestarticlebotom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width:576px) {
+
+    #bgSection, .whyeasybankbottom, .latestarticlebotom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width:375px) {
+    #bgSection, .whyeasybankbottom, .latestarticlebotom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
