@@ -234,6 +234,10 @@ font-weight: bold;
     font-size: 14px;
 }
 
+i{
+    font-size: 22px;
+}
+
 @media screen and (max-width:992px) {
 
     #navsection{
@@ -266,12 +270,42 @@ font-weight: bold;
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+@media screen and (max-width:648px){
+    .linkhide{
+        display: block;
+    }
+    .ri-close-line{
+        display: none;
+    }
+    .navlinks{
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        background-color: #e0e0e0;
+        flex-direction: column;
+        width: 400px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        box-shadow: 15px 15px 20px gray;
+        transition: .5s;
+    }
+}
 
 @media screen and (max-width:576px) {
 
     #bgSection, .whyeasybankbottom, .latestarticlebotom {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    #whyeasybank{
+        text-align: center;
+    }
+
+    .whyeasybanktop{
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
     }
 }
 @media screen and (max-width:375px) {

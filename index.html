@@ -9,13 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Link css to html -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <section id="navsection">
         <a href=""><img src="/images/logo.svg" alt="logo"></a>
+
+
+        <div class="linkhide">
+            <i class="ri-menu-line" onclick="opennav()"></i>
+            <i class="ri-close-line" onclick="closenav()"></i>
+        </div>
+
+
         <div class="navlinks">
             <a href="/">Home</a>
             <a href="">About</a>
@@ -154,10 +162,12 @@
             <div class="lastbutton">
                 <a href="" class="requestbutton">Request Invite</a>
                 <p> 
-                <h5>© Easybank. All Rights Reserved</h5>
+                <h5>&copy; Easybank. All Rights Reserved</h5>
                 </p>
             </div>
             </div>
     </section>
+
+    <script src="/JAVASCRIPT/Main.js"></script>
 </body>
 </html>
